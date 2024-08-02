@@ -4,7 +4,7 @@ HappyPet é a plataforma de streaming dedicada exclusivamente aos seus amigos de
 
 ## Funcionalidades
 
-- Catálogo de categorias
+- Carrosel de filmes
 - Assitir videos 
 - Ouvir sons
 
