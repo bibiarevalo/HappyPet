@@ -1,36 +1,49 @@
 * {
     margin: 0;
+    border: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
 body {
     font-family: Arial, sans-serif;
+    width: 100vw;
 }
 
 header {
     display: flex;
+    position: fixed;
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
+    padding: 5px;
     background-color: #5ac8fa;
     color: white;
+    width: 100%;
+    top: 0;
+    left: 0;
 }
 
 header h1 {
     font-size: 24px;
+    margin: 0 10px 0 0;;
 }
 
 header img {
-    height: 50px;
+    height: 65px;
+    width: 65px
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
 }
 
 header button {
     background-color: #3164f4;
     color: white;
     border: none;
-    padding: 10px 20px;
-    margin-left: 10px;
+    padding: 10px 30px;
+    margin-left: 20px;
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
@@ -45,4 +58,41 @@ footer {
     height: 50px;
     text-align: center;
     padding: 15px;
+    width: 100%;
+}
+main {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 60px;
+}
+
+.news-block {
+    background-color: #fc0;
+    margin: 50px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.news-block img {
+    width: 200px;
+    height: 250px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.botão-assistir {
+    display: block;
+    margin: 20px auto 0; 
+    border-radius: 50%; 
+    border: none; 
+    width: 100px; 
+    height: 100px; 
+    background-color: #007BFF; 
+    color: white; 
+    font-size: 16px; 
+    cursor: pointer; 
 }
