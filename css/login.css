@@ -14,6 +14,61 @@ body {
     justify-content: space-between;
 }
 
+header {
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    background-color: #5ac8fa;
+    color: white;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+header h1 {
+    font-size: 24px;
+    margin: 0 10px 0 0;
+}
+
+header img {
+    height: 65px;
+    width: 65px;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+header button {
+    background-color: #3164f4;
+    color: white;
+    border: none;
+    padding: 10px 30px;
+    margin-left: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+header button:hover {
+    background-color: #fc0;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+}
+
+footer {
+    background-color: #59C0F9;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    color: #000;
+}
 
 .login-container {
     display: flex;
@@ -76,15 +131,6 @@ form a:hover {
     text-decoration: underline;
 }
 
-.footer {
-    background-color: #59C0F9;
-    width: 100%;
-    padding: 10px;
-    text-align: center;
-    color: #000;
-    position: absolute;
-    bottom: 0;
-}
 .feedback {
     color: red;
     margin-top: 10px;
