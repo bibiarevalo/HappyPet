@@ -1,16 +1,26 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HappyPet Cadastro</title>
-    <link rel="stylesheet" href="../css/cadastro.css">
-    <script src="../js/cadastro.js"></script>
+
+    <link rel="stylesheet" href="/css/cadastro.css">
+    <script src="../js/cadastro.js" defer></script>
 </head>
+
 <body>
+    <header>
+        <div class="logo-container">
+            <h1>HAPPYPET</h1>
+            <img src="/image-removebg-preview.png" alt="Logo HappyPet">
+        </div>
+    </header>
+
     <main>
         <div class="form-container">
-            <form>
+            <form id="cadastroForm">
                 <label for="nome">Nome</label>
                 <input type="text" id="nome" name="nome" required>
 
@@ -20,13 +30,19 @@
                 <label for="senha">Senha</label>
                 <input type="password" id="senha" name="senha" required>
 
-                <label for="repita">Repita</label>
+                <label for="repita">Repita a Senha</label>
                 <input type="password" id="repita" name="repita" required>
 
-                <button><a href="login.html"  type="submit" onclick="pegarDados()">Cadastrar</a></button>
+                <button type="button" id="cadastrarButton" onclick="pegarDados()">Cadastrar</button>
             </form>
         </div>
     </main>
-    <source src="https://www.youtube.com/watch?v=3fLWXYPMFDU" type="video/mp4">
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 HappyPet.<br> Todos os direitos reservados.</p>
+        </div>
+    </footer>
 </body>
+
 </html>

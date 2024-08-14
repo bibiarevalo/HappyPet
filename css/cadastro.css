@@ -1,3 +1,10 @@
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -6,12 +13,41 @@ body {
     color: #7d3cff;
 }
 
+header {
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    background-color: #5ac8fa;
+    color: white;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000; /* Garante que o header fique acima do conteúdo principal */
+}
+
+header h1 {
+    font-size: 24px;
+    margin: 0 10px 0 0;
+}
+
+header img {
+    height: 65px;
+    width: 65px;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
 
 main {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: calc(100vh - 140px); /* Ajusta conforme necessário */
+    height: calc(100vh - 140px); /* Ajusta conforme necessário para o espaçamento com o header e o footer */
+    margin-top: 60px; /* Espaço para o header fixo */
 }
 
 .form-container {
@@ -24,14 +60,14 @@ main {
 form {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Centraliza os elementos */
+    align-items: center;
 }
 
 form label {
     margin-bottom: 5px;
     font-size: 18px;
     font-weight: bold;
-    text-align: center; /* Centraliza o texto dos rótulos */
+    text-align: center;
 }
 
 form input {
@@ -40,9 +76,9 @@ form input {
     border: none;
     border-radius: 20px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-    width: 100%; /* Ajusta para ocupar toda a largura */
-    max-width: 300px; /* Define um tamanho máximo para os campos de entrada */
-    text-align: center; /* Centraliza o texto dentro dos campos de entrada */
+    width: 100%;
+    max-width: 300px;
+    text-align: center;
 }
 
 form button {
@@ -55,21 +91,20 @@ form button {
     font-weight: bold;
     cursor: pointer;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-    width: 100%; /* Ajusta para ocupar toda a largura */
-    max-width: 300px; /* Define um tamanho máximo para o botão */
+    width: 100%;
+    max-width: 300px;
 }
 
 form button:hover {
     background-color: #6a30e2;
 }
 
-a{
-    text-decoration: none;
-    color: white;
-}
-
-
-source{
-    width: 50px;
+footer {
+    background-color: #5bc0eb;
     height: 50px;
+    text-align: center;
+    padding: 15px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
 }
