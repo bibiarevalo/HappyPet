@@ -42,21 +42,6 @@ header img {
     align-items: center;
 }
 
-header button {
-    background-color: #3164f4;
-    color: white;
-    border: none;
-    padding: 10px 30px;
-    margin-left: 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-}
-
-header button:hover {
-    background-color: #fc0;
-}
-
 main {
     display: flex;
     justify-content: center;
