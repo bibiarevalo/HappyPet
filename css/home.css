@@ -47,6 +47,7 @@ header button {
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
+    
 }
 
 header button:hover {
@@ -95,4 +96,5 @@ main {
     color: white; 
     font-size: 16px; 
     cursor: pointer; 
+    
 }
