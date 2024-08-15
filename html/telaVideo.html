@@ -6,15 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Tela de Videos </title>
     <link rel="stylesheet" href="./../css/telaVideo.css">
+    <script src="../js/telaVideo.js"></script>
 </head>
 
-<body>
+<body onload="mostar_video()">
+
+
     <header></header>
     <main>
         <div class="painelAzul">
-            <video class="video" controls>
-                <source src="./../IMG/bolt.mp4" type="video/mp4">>
+            <video id="video" width="750" controls>
+                <source  type="video/mp4">
             </video>
+            
     </main>
     <footer>
         <img id="racao" src="./../IMG/racao.png">
