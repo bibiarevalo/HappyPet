@@ -16,4 +16,6 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
         document.getElementById('feedback').textContent = 'Login ou senha incorretos!';
         document.getElementById('feedback').style.color = 'red';
     }
+    window.location.href = '../html/home.html'
 });
+
